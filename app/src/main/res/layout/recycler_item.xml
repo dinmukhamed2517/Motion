@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:transitionName="container"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:transitionName="image"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/photo_5" />
+
+    <TextView
+        android:id="@+id/title"
+        android:transitionName="title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:padding="3dp"
+        tools:text="Песик"
+        android:textColor="@color/white" />
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Motion</string>
+    <string name="button_text">Let\'s go!</string>
+    <string name="app">STELL</string>
+    <string name="description_placeholder">Ста́туя Свобо́ды — колоссальная скульптура, расположенная в США на острове Свободы, находящемся в Верхней Нью-Йоркской бухте, примерно в трёх километрах к юго-западу от южной окраины острова Манхэттен</string>
+    <string name="stell">STELL</string>
+    <string name="app_desc">A space for you to access your good times with a click and record adventures and special moments with family or friends, using our quick and very practical organization system.</string>
+</resources>

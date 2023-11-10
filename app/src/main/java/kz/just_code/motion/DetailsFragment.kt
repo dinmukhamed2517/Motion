@@ -12,12 +12,12 @@ class DetailsFragment:BaseFragment<FragmentDetailsBinding>(FragmentDetailsBindin
     override fun onBindView() {
         super.onBindView()
         with(binding){
-            title.text = args.title
-            image.setImageResource(args.image)
-            description.text = args.description
-            title.transitionName = "title_${args.id}"
-            image.transitionName = "image_${args.id}"
-            container.transitionName = "container_${args.id}"
+            title.text = args.itemDto.title
+            image.setImageResource(args.itemDto.image)
+            description.text = args.itemDto.description
+            title.transitionName = "title_${args.itemDto.id}"
+            image.transitionName = "image_${args.itemDto.id}"
+            container.transitionName = "container_${args.itemDto.id}"
 
             image.setOnClickListener{
                 image.animate()

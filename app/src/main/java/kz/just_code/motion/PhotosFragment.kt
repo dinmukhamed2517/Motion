@@ -5,6 +5,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import kz.just_code.motion.base.BaseFragment
 import kz.just_code.motion.databinding.FragmentPhotosBinding
+import kz.just_code.motion.model.ItemDto
 
 class PhotosFragment:BaseFragment<FragmentPhotosBinding>(FragmentPhotosBinding::inflate) {
     override fun onBindView() {
@@ -17,8 +18,7 @@ class PhotosFragment:BaseFragment<FragmentPhotosBinding>(FragmentPhotosBinding::
 
         adapter.itemClick = {it, shared ->
             val extras = FragmentNavigatorExtras(*shared.toList().toTypedArray())
-            val action = PhotosFragmentDirections.actionPhotosFragmentToDetailsFragment(
-                it.id, it.title, it.image, it.description)
+            val action = PhotosFragmentDirections.actionPhotosFragmentToDetailsFragment(it)
             findNavController().navigate(action, extras)
         }
     }

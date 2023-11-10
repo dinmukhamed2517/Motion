@@ -1,13 +1,16 @@
 package kz.just_code.motion
 
+import android.os.Parcelable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.DrawableRes
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
+import kotlinx.android.parcel.Parcelize
 import kz.just_code.motion.base.BaseItemViewHolder
 import kz.just_code.motion.databinding.RecyclerItemBinding
+import kz.just_code.motion.model.ItemDto
 
 class Adapter: ListAdapter<ItemDto, BaseItemViewHolder<*>>(ItemDiffUtils()){
 
@@ -56,10 +59,3 @@ class Adapter: ListAdapter<ItemDto, BaseItemViewHolder<*>>(ItemDiffUtils()){
 
 }
 
-
-data class ItemDto(
-    val id:Int,
-    val title:String,
-    @DrawableRes val image:Int,
-    val description:String,
-)
